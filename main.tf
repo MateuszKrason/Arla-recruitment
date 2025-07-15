@@ -1,5 +1,5 @@
 data "azapi_resource_id" "resource_group" {
-  type      = "Microsoft.Resources/resourceGroups@2021-04-01"
+  type      = "Microsoft.Resources/resourceGroups@2025-04-01"
   name      = var.resource_group_name
   parent_id = "/subscriptions/${var.subscription_id}"
 }
