@@ -5,5 +5,5 @@ module "management_lock" {
   resource_group_name = "arla-test"
   lock_name           = "example-lock"
   lock_level          = "CanNotDelete"
-  notes               = "This lock prevents accidental deletion."
+  notes               = "This lock prevents deletion."
 }

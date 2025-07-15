@@ -1,5 +1,5 @@
 variable "subscription_id" {
-  description = "The subscription ID where the resource group exists. Required because azapi does not infer it."
+  description = "The subscription ID where the resource group exists."
   type        = string
 }
 
@@ -14,7 +14,7 @@ variable "lock_name" {
 }
 
 variable "lock_level" {
-  description = "The level of the lock. Possible values are 'CanNotDelete' and 'ReadOnly'."
+  description = "The level of the lock. Possible values: 'CanNotDelete' and 'ReadOnly'."
   type        = string
   validation {
     condition     = contains(["CanNotDelete", "ReadOnly"], var.lock_level)
